@@ -1,11 +1,15 @@
-import './Registered.css';
+
 
 
 function Registered() {
 
 
+
   return (
-   <div>Registered</div>
+
+    <div className="flex">
+      Registered
+    </div>
   );
 }
 

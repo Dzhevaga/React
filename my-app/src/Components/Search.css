@@ -1,10 +1,9 @@
 .search-icon {
-    width: 30px;
+   
+    width: 32px;
     height: auto;
 }
-
 .search {
-    align-items: center;
     display: flex;
-    
+    align-items: center;
 }

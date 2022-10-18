@@ -5,8 +5,8 @@ export default function Movies() {
         <>
         <Header />
         <h1>Movies</h1>
-          </>
-      
+        </>
     );
   }
-   
+
+  

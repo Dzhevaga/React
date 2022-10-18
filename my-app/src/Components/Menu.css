@@ -1,26 +1,28 @@
 .menu {
     list-style: none;
     display: flex;
-    align-items: center;
     gap: 20px;
-
+    align-items: center;
 }
+
+
+   
 
 .nav-link {
- text-decoration: none;
- color: black;
- font-size: 16px;
-    border-bottom: 2px solid transparent;
-    transition: all 0.2s ease-out;
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+    
     cursor: pointer;
     padding: 10px 15px;
+    border-bottom: 4px solid transparent;
+    transition: all 0.2s ease-out;
+
 }
-
 .nav-link:hover {
-    border-bottom: 2px solid black;
-
+    border-bottom: 4px solid #ffbf00;
 }
 .selected {
-    color: darkgreen;
+    color: rgb(240, 22, 22);
     font-weight: bold;
 }

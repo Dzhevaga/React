@@ -1,13 +1,12 @@
 import Header from '../Components/Header.jsx'
 
- export default function TVShow() {
+export default function TVShow() {
     return (
-      <>
-      <Header />
-      <h1>TVShow</h1>
+        <>
+        <Header />
+        <h1>TV Show</h1>
         </>
-    
-     
     );
   }
-   
+
+  
