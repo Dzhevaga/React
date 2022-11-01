@@ -1,4 +1,3 @@
-import Header from './Components/Header.jsx'
 import Home from './Pages/Home';
 import Movies from './Pages/Movies';
 import TVShow from './Pages/TVShow';
@@ -6,7 +5,7 @@ import Contacts from './Pages/Contacts';
 import { Routes, Route } from 'react-router-dom';
 import './App.css';
 import React, { useEffect, useState } from "react";
-import List from './Components/List.jsx';
+
 
 function App() {
   const [popMovies, setPopMovies] = useState([]); 
@@ -44,11 +43,10 @@ function App() {
     <Routes>
       <Route path="/" element={<Home movies={popMovies} isLoaded={isLoaded} rateMovies={rateMovies} isLoadedrate={isLoadedRate}/>}/>
       <Route path="/home" element={<Home movies={popMovies} isLoaded={isLoaded} rateMovies={rateMovies} isLoadedrate={isLoadedRate}/>}/>
-      
       <Route path="/movies" element={<Movies />}/>
       <Route path="/tv-show" element={<TVShow />}/>
       <Route path="/contacts" element={<Contacts />}/>
-      </Routes>
+    </Routes>
   );
 }
 
