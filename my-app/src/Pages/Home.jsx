@@ -7,7 +7,7 @@ import List from '../Components/List.jsx';
 export default function Home(props) {
   // console.log(props)
 
-  const {movies, isLoaded, rateMovies, isLoadedrate} = props;
+  const {movies, isLoaded, rateMovies, isLoadedRate} = props;
   
 
         return (
@@ -16,7 +16,10 @@ export default function Home(props) {
         <div className='w-full bg-slate-400 '>
           <Poster movies={movies} isLoaded={isLoaded}/> 
         </div>
-        <List movies={rateMovies} isLoaded={isLoadedrate}/>
+        <div className='max-w-screen-2xl mx-auto p-4 bg-slate-400 '>
+          <List rateMovies={rateMovies} isLoaded={isLoadedRate}/>
+        </div>
+        
         </>
     );
   }

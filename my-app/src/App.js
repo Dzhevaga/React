@@ -26,7 +26,7 @@ function App() {
       console.error('Error:',error);
     })
 
-  fetch("https://api.themoviedb.org/3/movie/popular?api_key=46b3d80e68c3305b185dc8a255c58fac&language=en-US&page=1")
+  fetch("https://api.themoviedb.org/3/movie/top_rated?api_key=46b3d80e68c3305b185dc8a255c58fac&language=en-US&page=1")
     .then( response => response.json() )
     .then( answer =>  {
       setRateMovies(answer.results);
@@ -41,8 +41,8 @@ function App() {
 
   return (
     <Routes>
-      <Route path="/" element={<Home movies={popMovies} isLoaded={isLoaded} rateMovies={rateMovies} isLoadedrate={isLoadedRate}/>}/>
-      <Route path="/home" element={<Home movies={popMovies} isLoaded={isLoaded} rateMovies={rateMovies} isLoadedrate={isLoadedRate}/>}/>
+      <Route path="/" element={<Home movies={popMovies} isLoaded={isLoaded} rateMovies={rateMovies} isLoadedRate={isLoadedRate}/>}/>
+      <Route path="/home" element={<Home movies={popMovies} isLoaded={isLoaded} rateMovies={rateMovies} isLoadedRate={isLoadedRate}/>}/>
       <Route path="/movies" element={<Movies />}/>
       <Route path="/tv-show" element={<TVShow />}/>
       <Route path="/contacts" element={<Contacts />}/>
